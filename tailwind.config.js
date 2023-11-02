@@ -2,7 +2,19 @@
 module.exports = {
   content: ['*.html'],
   theme: {
-    extend: {}
+    container: {
+      center: true
+    },
+    fontFamily: {
+      roboto: 'Roboto'
+    },
+    extend: {
+      colors: {
+        dark: '#14213d',
+        light: '#E5E5E5',
+        yellow: '#FCA311'
+      }
+    }
   },
   plugins: []
 };

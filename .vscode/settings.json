@@ -1,0 +1,9 @@
+{
+  "workbench.colorTheme": "Andromeda Bordered",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontWeight": "normal",
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
+}

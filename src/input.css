@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-dark font-roboto;
+    @apply font-roboto;
   }
 
   h1 {
@@ -18,4 +18,24 @@
   p {
     @apply text-base font-normal text-gray-500;
   }
+}
+
+.gradasi {
+  background: rgb(20, 33, 61);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(20, 33, 61, 1) 36%,
+    rgba(0, 38, 50, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(20, 33, 61, 1) 36%,
+    rgba(0, 38, 50, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(20, 33, 61, 1) 36%,
+    rgba(0, 38, 50, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14213d",endColorstr="#002632",GradientType=1);
 }

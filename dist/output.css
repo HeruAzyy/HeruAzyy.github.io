@@ -435,8 +435,6 @@ video {
 }
 
 body {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 33 61 / var(--tw-bg-opacity));
   font-family: Roboto;
 }
 
@@ -853,10 +851,6 @@ p {
   border-color: transparent;
 }
 
-.bg-dark\/75 {
-  background-color: rgb(20 33 61 / 0.75);
-}
-
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -865,6 +859,10 @@ p {
 .bg-slate-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .p-3 {
@@ -1038,6 +1036,16 @@ p {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.gradasi {
+  background: rgb(20, 33, 61);
+  background: linear-gradient(
+    180deg,
+    rgba(20, 33, 61, 1) 36%,
+    rgba(0, 38, 50, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14213d",endColorstr="#002632",GradientType=1);
 }
 
 .hover\:bg-slate-300:hover {

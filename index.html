@@ -295,34 +295,52 @@
             </div>
           </div>
 
-          <form>
+          <form name="heru-azy-contact-form">
             <div class="w-full lg:mx-auto">
               <div class="w-full mb-8">
                 <label for="name" aria-label="Nama" class="text-base text-primary font-bold text-gray-400">Nama</label>
-                <input type="text" id="name"
+                <input type="text" id="name" name="nama"
                   class="w-full bg-transparent border-gray-200 border-2 text-gray-400 p-2 rounded-md focus:outline-none">
               </div>
 
               <div class="w-full mb-8">
                 <label for="email" aria-label="Email"
                   class="text-base text-primary font-bold text-gray-400">Email</label>
-                <input type="email" id="email"
+                <input type="email" id="email" name="email"
                   class="w-full bg-transparent border-gray-200 border-2 text-gray-400 p-2 rounded-md focus:outline-none">
               </div>
 
               <div class="w-full mb-8">
                 <label for="message" aria-label="Pesan"
                   class="text-base text-primary font-bold text-gray-400">Pesan</label>
-                <textarea type="text" id="message"
+                <textarea type="text" id="message" name="pesan"
                   class="w-full bg-transparent border-gray-200 border-2 text-gray-400 p-2 rounded-md focus:outline-none h-20"></textarea>
               </div>
 
               <div class="w-full">
-                <button aria-label=" Kirim"
-                  class="text-base font-semibold text-gray-300 py-2 px-8 border-2 rounded-md border-slate-300 hover:bg-slate-300 hover:text-dark hover:shadow-lg transition duration-200">
+
+                <p
+                  class="text-alert hidden border-2 border-slate-300 rounded-md text-base py-2 mb-8 text-center font-light text-white">
+                  Terimakasih, pesan anda sudah terkirim✨
+                </p>
+
+                <button aria-label="kirim" type="submit"
+                  class="btn-kirim text-base font-semibold text-gray-300 py-2 px-8 border-2 rounded-md border-slate-300 hover:bg-slate-300 hover:text-dark hover:shadow-lg transition duration-200">
                   Kirim</button>
+
+                <button type="button"
+                  class="btn-loading hidden text-base font-semibold text-gray-500 py-2 px-5 border-2 rounded-md border-slate-300 cursor-not-allowed">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-refresh-cw animate-spin inline-flex mr-3">
+                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                    <path d="M21 3v5h-5" />
+                    <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                    <path d="M8 16H3v5" />
+                  </svg>
+                  Mengirim..
+                </button>
               </div>
-            </div>
           </form>
         </section>
 
@@ -333,6 +351,30 @@
       </main>
     </div>
   </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyYWbXlZxdrwaKBjqkmSIChqfKDI9dz0rNbqohkeUsVyvsZThwrfsr_wYNw5p3ZChtxOw/exec'
+    const form = document.forms['heru-azy-contact-form']
+    const btnKirim = document.querySelector('.btn-kirim')
+    const btnLoading = document.querySelector('.btn-loading')
+    const textAlert = document.querySelector('.text-alert')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+
+      btnLoading.classList.toggle('hidden')
+      btnKirim.classList.toggle('hidden')
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          btnLoading.classList.toggle('hidden')
+          btnKirim.classList.toggle('hidden')
+          textAlert.classList.toggle('hidden')
+          form.reset()
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>

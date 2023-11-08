@@ -4,6 +4,7 @@
   "editor.fontFamily": "Jetbrains Mono",
   "editor.fontWeight": "normal",
   "editor.tabSize": 2,
+  "editor.defaultFormatter": "vscode.html-language-features",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true
 }

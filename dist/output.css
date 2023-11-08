@@ -562,6 +562,20 @@ p {
   --tw-backdrop-sepia:  ;
 }
 
+.block-animate {
+  width: 0;
+  height: 60px;
+  background-color: #fca311;
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 1s;
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1057,6 +1071,57 @@ p {
   transition-duration: 200ms;
 }
 
+.animation-delay-2500 {
+  animation-delay: 2500ms;
+}
+
+.animation-delay-2700 {
+  animation-delay: 2700ms;
+}
+
+.animation-delay-2900 {
+  animation-delay: 2900ms;
+}
+
+.animation-delay-3100 {
+  animation-delay: 3100ms;
+}
+
+.animation-delay-3300 {
+  animation-delay: 3300ms;
+}
+
+.animation-delay-3500 {
+  animation-delay: 3500ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
 .gradasi {
   background: rgb(20, 33, 61);
   background: linear-gradient(
@@ -1065,6 +1130,13 @@ p {
     rgba(0, 38, 50, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14213d",endColorstr="#002632",GradientType=1);
+}
+
+@media (min-width: 1024px) {
+  .lg\:fade {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
 }
 
 .hover\:bg-slate-300:hover {
@@ -1297,6 +1369,10 @@ p {
     width: 50%;
   }
 
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
@@ -1339,6 +1415,10 @@ p {
 
   .lg\:opacity-0 {
     opacity: 0;
+  }
+
+  .lg\:animation-delay-1500 {
+    animation-delay: 1500ms;
   }
 
   .lg\:hover\:\!opacity-100:hover {

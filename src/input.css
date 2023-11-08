@@ -20,6 +20,49 @@
   }
 }
 
+@layer components {
+  .block-animate {
+    width: 0;
+    height: 60px;
+    background-color: #fca311;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 1s;
+  }
+
+  .fade {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
 .gradasi {
   background: rgb(20, 33, 61);
   background: -moz-linear-gradient(

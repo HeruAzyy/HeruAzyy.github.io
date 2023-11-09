@@ -9,6 +9,7 @@ module.exports = {
       roboto: "Roboto",
     },
     animationDelay: {
+      2000: "2000ms",
       2500: "2500ms",
       2700: "2700ms",
       2900: "2900ms",

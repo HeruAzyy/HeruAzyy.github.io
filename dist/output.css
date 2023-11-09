@@ -1091,10 +1091,6 @@ p {
   animation-delay: 3300ms;
 }
 
-.animation-delay-3500 {
-  animation-delay: 3500ms;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;

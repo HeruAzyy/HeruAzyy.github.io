@@ -1233,8 +1233,8 @@ p {
   color: rgb(252 163 17 / var(--tw-text-opacity));
 }
 
-.backdrop-blur {
-  --tw-backdrop-blur: blur(8px);
+.backdrop-blur-lg {
+  --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -1263,24 +1263,12 @@ p {
   transition-duration: 200ms;
 }
 
+.animation-delay-1700 {
+  animation-delay: 1700ms;
+}
+
 .animation-delay-2500 {
   animation-delay: 2500ms;
-}
-
-.animation-delay-2700 {
-  animation-delay: 2700ms;
-}
-
-.animation-delay-2900 {
-  animation-delay: 2900ms;
-}
-
-.animation-delay-3100 {
-  animation-delay: 3100ms;
-}
-
-.animation-delay-3300 {
-  animation-delay: 3300ms;
 }
 
 @keyframes fadeIn {
@@ -1671,8 +1659,8 @@ p {
     opacity: 0;
   }
 
-  .lg\:animation-delay-1500 {
-    animation-delay: 1500ms;
+  .lg\:animation-delay-1700 {
+    animation-delay: 1700ms;
   }
 
   .lg\:hover\:\!opacity-100:hover {

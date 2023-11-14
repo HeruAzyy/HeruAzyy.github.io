@@ -2,7 +2,7 @@
   "workbench.colorTheme": "Andromeda Bordered",
   "workbench.iconTheme": "vscode-icons",
   "editor.fontFamily": "Jetbrains Mono",
-  "editor.fontWeight": "normal",
+  "editor.fontWeight": "300",
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,

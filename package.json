@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Heru Azy",
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.0.3",

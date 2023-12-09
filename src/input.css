@@ -3,121 +3,121 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply gradasi font-roboto;
-  }
+	body {
+		@apply gradasi font-roboto;
+	}
 
-  h1 {
-    @apply text-5xl font-bold text-yellow;
-  }
+	h1 {
+		@apply text-5xl font-bold text-yellow;
+	}
 
-  h3 {
-    @apply text-2xl font-semibold text-light;
-  }
+	h3 {
+		@apply text-2xl font-semibold text-light;
+	}
 
-  p {
-    @apply text-base font-normal text-gray-500;
-  }
+	p {
+		@apply text-base font-normal text-gray-500;
+	}
 }
 
 @layer components {
-  .first-block {
-    width: 0;
-    height: 60px;
-    background-color: #fca311;
-    position: absolute;
-    animation: Block 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-    animation-delay: 1s;
-  }
+	.first-block {
+		width: 0;
+		height: 60px;
+		background-color: #fca311;
+		position: absolute;
+		animation: Block 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+		animation-delay: 1s;
+	}
 
-  .sec-block {
-    width: 0;
-    height: 60px;
-    background-color: #000814;
-    position: absolute;
-    animation: Block 1.1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-    animation-delay: 1.5s;
-  }
+	.sec-block {
+		width: 0;
+		height: 60px;
+		background-color: #000814;
+		position: absolute;
+		animation: Block 1.1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+		animation-delay: 1.5s;
+	}
 
-  .first-block-screen {
-    width: 0;
-    height: 60px;
-    background-color: #fca311;
-    position: absolute;
-    animation: Block 3s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  }
+	.first-block-screen {
+		width: 0;
+		height: 60px;
+		background-color: #fca311;
+		position: absolute;
+		animation: Block 3s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+	}
 
-  .sec-block-screen {
-    width: 0;
-    height: 60px;
-    background-color: #000814;
-    position: absolute;
-    animation: Block 2.1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-    animation-delay: 0.5s;
-  }
+	.sec-block-screen {
+		width: 0;
+		height: 60px;
+		background-color: #000814;
+		position: absolute;
+		animation: Block 2.1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+		animation-delay: 0.5s;
+	}
 
-  .fade {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-  }
+	.fade {
+		opacity: 0;
+		animation: fadeIn 1s forwards;
+	}
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes Block {
-  0% {
-    width: 0%;
-    left: 0;
-  }
+	0% {
+		width: 0%;
+		left: 0;
+	}
 
-  50% {
-    width: 100%;
-    left: 0;
-  }
+	50% {
+		width: 100%;
+		left: 0;
+	}
 
-  100% {
-    width: 0;
-    left: 100%;
-  }
+	100% {
+		width: 0;
+		left: 100%;
+	}
 }
 
 .gradasi {
-  background: rgb(20, 33, 61);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(20, 33, 61, 1) 36%,
-    rgba(0, 38, 50, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(20, 33, 61, 1) 36%,
-    rgba(0, 38, 50, 1) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(20, 33, 61, 1) 36%,
-    rgba(0, 38, 50, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14213d",endColorstr="#002632",GradientType=1);
+	background: rgb(20, 33, 61);
+	background: -moz-linear-gradient(
+		180deg,
+		rgba(20, 33, 61, 1) 36%,
+		rgba(0, 38, 50, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		180deg,
+		rgba(20, 33, 61, 1) 36%,
+		rgba(0, 38, 50, 1) 100%
+	);
+	background: linear-gradient(
+		180deg,
+		rgba(20, 33, 61, 1) 36%,
+		rgba(0, 38, 50, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14213d",endColorstr="#002632",GradientType=1);
 }
 
 *::-webkit-scrollbar {
-  width: 0;
+	width: 0;
 }
 
 *::-webkit-scrollbar-track {
-  background: transparent;
+	background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
+	background: transparent;
+	border: none;
 }

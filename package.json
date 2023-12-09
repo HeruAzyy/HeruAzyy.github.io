@@ -1,22 +1,21 @@
 {
-  "name": "heru-azy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Heru Azy",
-  "license": "ISC",
-  "devDependencies": {
-    "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.7",
-    "tailwindcss": "^3.3.5"
-  },
-  "dependencies": {
-    "aos": "^3.0.0-beta.6",
-    "tailwindcss-animation-delay": "^1.2.0"
-  }
+	"name": "heru-azy",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Heru Azy",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "^3.0.3",
+		"tailwindcss": "^3.3.5"
+	},
+	"dependencies": {
+		"aos": "^3.0.0-beta.6",
+		"tailwindcss-animation-delay": "^1.2.0"
+	}
 }

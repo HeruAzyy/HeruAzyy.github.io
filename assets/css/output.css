@@ -1142,10 +1142,6 @@ p {
   transition-duration: 200ms;
 }
 
-.animation-delay-500 {
-  animation-delay: 500ms;
-}
-
 .animation-delay-2500 {
   animation-delay: 2500ms;
 }

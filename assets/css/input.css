@@ -4,7 +4,7 @@
 
 @layer base {
 	body {
-		@apply gradasi font-roboto;
+		@apply bg-dark font-roboto;
 	}
 
 	h1 {
@@ -89,7 +89,7 @@
 	}
 }
 
-.gradasi {
+/* .gradasi {
 	background: rgb(20, 33, 61);
 	background: -moz-linear-gradient(
 		180deg,
@@ -107,7 +107,7 @@
 		rgba(0, 38, 50, 1) 100%
 	);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14213d",endColorstr="#002632",GradientType=1);
-}
+} */
 
 *::-webkit-scrollbar {
 	width: 0;

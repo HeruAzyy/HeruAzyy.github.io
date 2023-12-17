@@ -435,14 +435,9 @@ video {
 }
 
 body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 33 61 / var(--tw-bg-opacity));
   font-family: Roboto;
-  background: rgb(20, 33, 61);
-  background: linear-gradient(
-		180deg,
-		rgba(20, 33, 61, 1) 36%,
-		rgba(0, 38, 50, 1) 100%
-	);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14213d",endColorstr="#002632",GradientType=1);
 }
 
 h1 {
@@ -1200,15 +1195,25 @@ p {
   }
 }
 
-.gradasi {
-  background: rgb(20, 33, 61);
-  background: linear-gradient(
+/* .gradasi {
+	background: rgb(20, 33, 61);
+	background: -moz-linear-gradient(
 		180deg,
 		rgba(20, 33, 61, 1) 36%,
 		rgba(0, 38, 50, 1) 100%
 	);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14213d",endColorstr="#002632",GradientType=1);
-}
+	background: -webkit-linear-gradient(
+		180deg,
+		rgba(20, 33, 61, 1) 36%,
+		rgba(0, 38, 50, 1) 100%
+	);
+	background: linear-gradient(
+		180deg,
+		rgba(20, 33, 61, 1) 36%,
+		rgba(0, 38, 50, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14213d",endColorstr="#002632",GradientType=1);
+} */
 
 *::-webkit-scrollbar {
   width: 0;

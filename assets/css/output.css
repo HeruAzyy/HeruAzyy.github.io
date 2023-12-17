@@ -600,25 +600,7 @@ p {
   }
 }
 
-.first-block {
-  width: 0;
-  height: 60px;
-  background-color: #fca311;
-  position: absolute;
-  animation: Block 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 1s;
-}
-
-.sec-block {
-  width: 0;
-  height: 60px;
-  background-color: #000814;
-  position: absolute;
-  animation: Block 1.1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 1.5s;
-}
-
-.first-block-screen {
+.first-layer {
   width: 0;
   height: 60px;
   background-color: #fca311;
@@ -626,7 +608,7 @@ p {
   animation: Block 3s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
 }
 
-.sec-block-screen {
+.sec-layer {
   width: 0;
   height: 60px;
   background-color: #000814;
@@ -1160,8 +1142,8 @@ p {
   transition-duration: 200ms;
 }
 
-.animation-delay-1700 {
-  animation-delay: 1700ms;
+.animation-delay-500 {
+  animation-delay: 500ms;
 }
 
 .animation-delay-2500 {
@@ -1226,13 +1208,6 @@ p {
 *::-webkit-scrollbar-thumb {
   background: transparent;
   border: none;
-}
-
-@media (min-width: 1024px) {
-  .lg\:fade {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-  }
 }
 
 .hover\:bg-slate-300:hover {
@@ -1520,10 +1495,6 @@ p {
 
   .lg\:opacity-0 {
     opacity: 0;
-  }
-
-  .lg\:animation-delay-1700 {
-    animation-delay: 1700ms;
   }
 
   .lg\:hover\:\!opacity-100:hover {

@@ -10,7 +10,6 @@ module.exports = {
 		},
 		extend: {
 			animationDelay: {
-				1700: '1700ms',
 				2500: '2500ms'
 			},
 			colors: {

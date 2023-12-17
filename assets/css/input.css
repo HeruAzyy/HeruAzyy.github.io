@@ -21,25 +21,7 @@
 }
 
 @layer components {
-	.first-block {
-		width: 0;
-		height: 60px;
-		background-color: #fca311;
-		position: absolute;
-		animation: Block 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-		animation-delay: 1s;
-	}
-
-	.sec-block {
-		width: 0;
-		height: 60px;
-		background-color: #000814;
-		position: absolute;
-		animation: Block 1.1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-		animation-delay: 1.5s;
-	}
-
-	.first-block-screen {
+	.first-layer {
 		width: 0;
 		height: 60px;
 		background-color: #fca311;
@@ -47,7 +29,7 @@
 		animation: Block 3s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
 	}
 
-	.sec-block-screen {
+	.sec-layer {
 		width: 0;
 		height: 60px;
 		background-color: #000814;

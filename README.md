@@ -1,4 +1,4 @@
-# Heru Azy Pangestu
+# My Portfolio✨
 
 Halo, saya **Heru Azy**! 👋
 

@@ -441,11 +441,11 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.75rem;
   line-height: 1;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(252 163 17 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 h3 {
@@ -956,6 +956,11 @@ p {
   background-color: transparent;
 }
 
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 163 17 / var(--tw-bg-opacity));
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -1094,11 +1099,6 @@ p {
 .text-light {
   --tw-text-opacity: 1;
   color: rgb(229 229 229 / var(--tw-text-opacity));
-}
-
-.text-slate-200 {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .text-slate-400 {
